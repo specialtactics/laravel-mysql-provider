@@ -1,4 +1,4 @@
-<?php
+<?php namespace SCM\MySQLe\Database\Migrations;
 
 use Illuminate\Database\Migrations\Migration as IMigration;
 
