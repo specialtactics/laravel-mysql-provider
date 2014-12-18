@@ -15,4 +15,8 @@ class MysqlGrammar extends \Illuminate\Database\Schema\Grammars\MySqlGrammar {
         return "binary({$column->length})";
     }
 
+    protected function typeUpdatedTimeStamp(Fluent $column) {
+        $column['nullable'] = true;
+        return "TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NULL DEFAULT NULL";
+    }
 }

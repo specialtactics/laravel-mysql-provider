@@ -12,4 +12,8 @@ class Blueprint extends \Illuminate\Database\Schema\Blueprint {
     {
         return $this->addColumn('binary', $column, compact('length'));
     }
+
+    public function updatedTimeStamp($column) {
+        return $this->addColumn('updatedTimeStamp', $column);
+    }
 }
